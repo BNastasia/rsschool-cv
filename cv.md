@@ -37,6 +37,9 @@ function nthFibo(n) {
 - The National State University | Bachelor’s Degree in Engineering
 - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 ---
+### Languages
+- English
+- Russian
 
 
 
