@@ -40,6 +40,3 @@ function nthFibo(n) {
 ### Languages
 - English
 - Russian
-
-
-
