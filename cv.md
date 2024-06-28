@@ -1,4 +1,4 @@
-# **Jo Malon**
+# **Ana Bel**
 #### Junior Frontend Developer
 ---
 ### Contacts
