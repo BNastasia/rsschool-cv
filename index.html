@@ -4,8 +4,138 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="columns">
+        <div class="left-column">
+          <section class="section section-profile" id="profile">
+            <img src="assets/img/avatar.jpg" class="avatar" alt="Avatar" />
+            <div class="section-profile-title">
+              <h1 class="profile-title">Ana Bel</h1>
+              <div class="underscoring"></div>
+              <h3 class="profile-subtitle">Junior Frontend Developer</h3>
+            </div>
+          </section>
+          <section class="section section-contacts" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <div class="underscoring"></div>
+            <ul class="section-list">
+              <li class="section-item contacts-item">
+                Location: New York, NY
+              </li>
+              <li class="section-item contacts-item">
+                Email: <a href="mailto:email@email.com" title="email">email@email.com</a>
+              </li>
+              <li class="section-item contacts-item">
+                Github: <a href="https://github.com/bnastasia" title="github">bnastasia</a>
+              </li>
+              <li class="section-item contacts-item">
+                Phone: +1(234)567-8901
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <div class="underscoring"></div>
+            <p>I’m a junior front-end developer passionate about bringing ideas to life on the web. I’m always eager to learn new technologies and improve my skills. I’m excited to contribute to a team environment and collaborate on creative projects.</p>
+          </section>
+        </div>
+        <aside class="right-column">
+          <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="underscoring"></div>
+            <ul class="section-list">
+              <li class="section-item">
+                HTML5, CSS3
+              </li>
+              <li class="section-item">
+                JavaScript
+              </li>
+              <li class="section-item">
+                Git, GitHub
+              </li>
+              <li class="section-item">
+                Figma
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+            <div class="underscoring"></div>
+            <pre class="pre">
+              <code>
+    function nthFibo(n) {
+      let temp = 0;
+      let fib = [0, 1]
+      for (let i = 2; i < n; i++) {
+        temp = fib[i - 1] + fib[i - 2];
+        fib.push(temp);
+      }
+      return fib[n-1];
+    }
+              </code>
+            </pre>
+          </section>
+          <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="underscoring"></div>
+            <ul class="section-list">
+              <li class="section-item">
+                The National State University	Bachelor’s Degree in Engineering
+              </li>
+              <li class="section-item">
+                RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <div class="underscoring"></div>
+            <ul class="section-list">
+              <li class="section-item">
+                English
+              </li>
+              <li class="section-item">
+                Russian
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="github-link" href="https://github.com/bnastasia">
+        <img class="github-icon" src="assets/img/github-logo.svg" alt="github logo" width="26" height="26">
+        <p>Visit my GitHub</p>
+      </a>
+      <p>© 2024</p>
+      <a href="https://rs.school/courses/javascript">
+        <img src="assets/img/rs_school_js.svg" alt="rsschool logo" width="73" height="26">
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
