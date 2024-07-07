@@ -1,0 +1,285 @@
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto';
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1048px;
+  margin: 30px auto;
+  min-height: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+  border: 2px solid #7695ad;
+}
+
+
+.header {
+  border: 1px solid #7695ad;
+  background-color: #7695ad;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  position: relative;
+  color: rgb(77, 58, 58);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.nav-link :after {
+  transition: color 0.5s;
+  opacity: 0.5; 
+
+}
+
+.nav-link:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.columns {
+  display: flex;
+}
+
+.left-column {
+  width: 40%;
+  background-color: #7695ad;
+  color: rgb(77, 58, 58);
+  padding: 0 50px 0 70px;
+}
+
+.right-column {
+  width: 60%;
+  background-color: white;
+  color: rgb(77, 58, 58);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-title {
+  font-size: 32px;
+  position: relative;
+  line-height: 5px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+
+}
+
+.profile-subtitle {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.underscoring {
+  width: 100%;
+  height: .1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: rgb(83, 71, 71);
+}
+
+.section-profile-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section {
+  padding-bottom: 40px;
+}
+
+.left-column .section-title {
+  text-align: center;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+}
+
+.section-item {
+  position: relative;
+  margin: 0px 15px 10px;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.section-item a {
+  text-decoration: none;
+  color: rgb(77, 58, 58);
+  transition: color 0.5s;
+  opacity: 0.7;
+}
+.section-item a:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.contacts-item {
+  list-style: none;
+  margin: 0 15px 10px 0;
+}
+
+p {
+  opacity: 0.7;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: rgb(77, 58, 58);
+  background-color: #7695ad; 
+}
+
+.github-link{
+  display: flex;
+  align-items: center;
+}
+
+.github-icon{
+  margin-right: 10px;
+}
+
+.footer-image{
+  width: 99px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(77, 58, 58);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+    font-size: 18px;
+  }
+  
+  .columns {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #7695ad;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-title {
+    font-size: 24px;
+  }
+
+  .left-column, .right-column {
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
